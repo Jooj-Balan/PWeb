@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Caixote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: lightgray;
+}
+
+
+.conteudo {
+    padding: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .Caixote {
+        height: auto;
+        width: auto;
+        background-color: gray;
+        .conteudo::before {
+            content: "Cinza";
+        }
+    }
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Caixote {
+        height: auto;
+        width: auto;
+        background-color: lightblue;
+        .conteudo::before {
+            content: "Azul claro";
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .Caixote {
+        height: auto;
+        width: auto;
+        background-color: lightgreen;
+        .conteudo::before {
+            content: "Verde claro";
+        }
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .Caixote {
+        height: auto;
+        width: auto;
+        background-color: lightcoral;
+        .conteudo::before {
+            content: "Coral claro";
+        }
+
+    }
+}
+
+@media (min-width: 1921px) {
+    .Caixote {
+        height: auto;
+        width: auto;
+        background-color: lightgoldenrodyellow;
+        .conteudo::before {
+            content: "Amarelo claro";
+        }
+    }
+}
