@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra, Papel ou Tesoura</h1>
+
+        <div class="escolha-jogador">
+            <h2>Sua escolha</h2>
+            <div class="botoes">
+                <button class="escolha-btn" onclick="jogar(0)">Pedra</button>
+                <button class="escolha-btn" onclick="jogar(1)">Papel</button>
+                <button class="escolha-btn" onclick="jogar(2)">Tesoura</button>
+            </div>
+        </div>
+
+        <div class="resultados">
+            <div class="resultado">
+                <span>Voce</span>
+                <strong id="escolhaUsuario">-</strong>
+            </div>
+            <div class="vs">vs</div>
+            <div class="resultado-computador">
+                <span>Computador</span>
+                <strong id="escolhaComputador">-</strong>
+            </div>
+        </div>
+
+        <div class="resultadoFinal">
+            <h2 id="resultado">Faça sua jogada</h2>
+            <p id="explicacao"></p>
+        </div>
+
+        <div class="quadroPontos">
+            <div class="pontos">
+                <span>Voce</span>
+                <strong id="pontuacaoUsuario">0</strong>
+            </div>
+            <div class="pontos">
+                <span>Empates</span>
+                <strong id="pontuacaoEmpate">0</strong>
+            </div>
+            <div class="pontos">
+                <span>Computador</span>
+                <strong id="pontuacaoComputador">0</strong>
+            </div>
+        </div>
+
+        <button class="botaoReset" onclick="resetar()">Resetar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
