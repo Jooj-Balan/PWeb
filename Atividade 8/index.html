@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><strong>Pesquisa de Opinião de Filme</strong></h1>
+    <form id="survey-form">
+        <label>Idade:
+            <input type="number" id="idade" min="1" required>
+        </label>
+        <label>Sexo:
+            <select id="sexo" required>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outros">Outros</option>
+            </select>
+        </label>
+        <label>Opinião:
+            <select id="opiniao" required>
+                <option value="4">Ótimo</option>
+                <option value="3">Bom</option>
+                <option value="2">Regular</option>
+                <option value="1">Péssimo</option>
+            </select>
+        </label>
+        <button type="submit">Adicionar resposta</button>
+    </form>
+
+    <button id="calcular">Calcular estatísticas</button>
+
+    <div class="resultado" id="resultado">
+        <p>Nenhuma resposta adicionada ainda.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

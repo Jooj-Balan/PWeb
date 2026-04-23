@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 24px; }
+        label { display: block; margin-top: 12px; }
+        input, select, button { margin-top: 4px; padding: 8px; width: 200px; }
+        .resultado { margin-top: 24px; padding: 16px; border: 1px solid #ccc; border-radius: 8px; max-width: 520px; }
+        .resultado p { margin: 8px 0; }
