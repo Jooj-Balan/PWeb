@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transformador de Texto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Transformador de Texto</h1>
+    <p>Digite um texto e escolha uma opção para converter o conteúdo.</p>
+
+    <label for="texto">Texto:</label>
+    <input type="text" id="texto" placeholder="Digite aqui..." />
+
+    <fieldset>
+      <legend>Escolha a transformação</legend>
+      <label>
+        <input type="radio" name="modo" value="upper" checked />
+        Letras maiúsculas
+      </label>
+      <label>
+        <input type="radio" name="modo" value="lower" />
+        Letras minúsculas
+      </label>
+    </fieldset>
+
+    <button id="transformar">Transformar</button>
+
+    <section id="resultado-area">
+      <h2>Resultado</h2>
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
